@@ -1,0 +1,107 @@
+body {
+  background: tomato;
+}
+
+.wrapper {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  height: 30em;
+  width: 25em;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#display {
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+  font-weight: bold;
+  height: 5em;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.button-view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.button-row {
+  flex: 1;
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#last-row {
+  flex: 2;
+}
+
+.button-column {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  background: #00b09b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #96c93d,
+    #00b09b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #96c93d,
+    #00b09b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100%;
+  font-size: 20px;
+}
+
+#button-column-left {
+  flex: 3;
+}
+
+#button-column-right {
+  flex: 1;
+}
+
+.btn-xl {
+  font-size: 20px;
+  width: 25%;
+  align-self: stretch;
+}
+
+.btn-third {
+  width: 33.3%;
+}
+
+.btn-wide {
+  flex-grow: 2;
+}
+
+.btn-tall {
+  width: 100%;
+}
